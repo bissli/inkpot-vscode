@@ -1,0 +1,25 @@
+{
+    "name": "inkpot-theme",
+    "displayName": "Inkpot Theme",
+    "description": "A dark color theme inspired by the classic Inkpot vim colorscheme",
+    "version": "0.0.1",
+    "publisher": "bissli",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bissli/inkpot-vscode.git"
+    },
+    "engines": { "vscode": "^1.85.0" },
+    "categories": [ "Themes" ],
+    "extensionDependencies": [ "fabiospampinato.vscode-highlight" ],
+    "main": "./extension.js",
+    "activationEvents": [ "onStartupFinished" ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Inkpot",
+                "uiTheme": "vs-dark",
+                "path": "./themes/inkpot-color-theme.json"
+            }
+        ]
+    }
+}
