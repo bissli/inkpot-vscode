@@ -29,6 +29,8 @@ function activate(context) {
                     "^=======.*": { "color": "#ffffff" },
                     "^>>>>>>>.*": { "color": "#ffffff" }
                 }, true);
+                // Prevent syntax highlighting for python (will override the theme colors)
+                config.update('[python]', { "editor.semanticHighlighting.enabled": false }, true);
             }
         }
     });
